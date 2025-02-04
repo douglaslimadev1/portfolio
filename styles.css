@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --bg-color: #f6f6f6;
+  --text-color: #2b2b2b;
+}
+
+/* Mobile First Design Implementation */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin-bottom: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+p, i, span {
+  font-family: 'Bellota Text', serif;
+}
+
+.padding-main-content {
+  padding: 0rem 0.75rem;
+}
+
+.margin-main-content {
+  margin: 0rem 0.75rem;
+}
+
+.margin-top-gap {
+  margin-top: 2rem;
+}
+
+/*
+ * Main Header
+*/
+#header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+  width: 2.25rem;
+  height: 2.6rem;
+  background-color: #2b2b2b;
+}
+
+.header-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-links .temp-links {
+  width: 2rem;
+  height: 2rem;
+  background-color: #2b2b2b;
+}
+
+.header-menu {
+  width: 2rem;
+  height: 2.6rem;
+  background-color: #2b2b2b;
+}
+
+/*
+ * Hero Section
+*/
+#hero {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.hero-text {
+  padding-top: 2rem;
+}
+
+.hero-text h2 {
+  font-size: 3.4rem;
+  padding-bottom: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-frame {
+  width: 128px;
+  height: 128px;
+  border-radius: 100vw;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+}
+
+.about-me-frame {
+  padding-bottom: 2rem;
+}
+
+.about-me-text {
+  width: 65vw;
+  padding-bottom: 2rem;
+}
+
+.temp-cv-download {
+  width: 35vw;
+  height: 3.5rem;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+  margin-bottom: 3rem;
+}
