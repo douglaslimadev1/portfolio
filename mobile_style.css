@@ -193,24 +193,29 @@ a {
 }
 
 .media-ponginsee {
-  background: center/100% no-repeat url('assets/gifs/gif_ponginsee.gif');
+  background: center/100% no-repeat url('assets/media/gif_ponginsee.gif');
   background-size: 100% 100%;
 }
 
 
 .media-rememorari {
-  background: center/100% no-repeat url('assets/gifs/print_rememorari.png');
+  background: center/100% no-repeat url('assets/media/print_rememorari.png');
   
 }
 
 .media-mirpro {
-  background: center/100% no-repeat url('assets/gifs/gif_mirpro.gif');
+  background: center/100% no-repeat url('assets/media/gif_mirpro.gif');
   background-size: cover;
 }
 
 .media-gameoflife {
-  background: center/100% no-repeat url('assets/gifs/gif_gameoflife.gif');
+  background: center/100% no-repeat url('assets/media/gif_gameoflife.gif');
   background-size: 100% 100%;
+}
+
+.media-private-servers {
+  background: center/100% no-repeat url('assets/media/print_private_servers.png');
+  background-size: cover;
 }
 
 .project-labels {
@@ -280,10 +285,25 @@ a {
 }
 
 .skill-media {
-  width: 128px;
-  height: 128px;
-  background-color: #000;
+  width: 8rem;
+  height: 8rem;
   border-radius: 100vw;
+}
+
+.skill-media-settings {
+  background: center/100% no-repeat url('assets/icons/icon_settings.png');
+}
+
+.skill-media-webpage {
+  background: center/84% no-repeat url('assets/icons/icon_webpage.png');
+}
+
+.skill-media-system {
+  background: center/90% no-repeat url('assets/icons/icon_system.png');
+}
+
+.skill-media-monitor {
+  background: center/100% no-repeat url('assets/icons/icon_monitor.png');
 }
 
 .skill-title {
@@ -322,7 +342,7 @@ a {
   width: 128px;
   height: 128px;
   border-radius: 100vw;
-  background-color: #000;
+  background: center/100% no-repeat url('assets/icons/icon_client_ratz.png');
 }
 
 .depo-client-name {
@@ -343,6 +363,10 @@ a {
   padding: 1rem;
   margin: 3rem 2rem;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact h2 {
+  text-align: center;
 }
 
 #contact p {
@@ -377,9 +401,25 @@ a {
   width: 32px;
   height: 32px;
   border-radius: 100vw;
-  background-color: #000;
   margin-right: 0.5rem;
 }
+
+.contact-media-email {
+  background: center/80% no-repeat url('assets/icons/icon_email.png');
+}
+
+.contact-media-wpp {
+  background: center/80% no-repeat url('assets/icons/icon_wpp.png');
+}
+
+.contact-media-linkedin {
+  background: center/100% no-repeat url('assets/icons/icon_linkedin.png');
+}
+
+.contact-media-github {
+  background: center/100% no-repeat url('assets/icons/icon_github.png');
+}
+
 
 
 
