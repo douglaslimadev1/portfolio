@@ -1,0 +1,19 @@
+@media screen and (min-width: 1200px) {
+	html {
+		font-size: 18px;
+	}
+
+	#container-body {
+		max-width: 1200px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	html {
+		font-size: 20px;
+	}
+
+	#container-body {
+		max-width: 1600px;
+	}
+}

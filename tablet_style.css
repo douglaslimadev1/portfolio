@@ -1,0 +1,106 @@
+@media screen and (min-width: 768px) {
+	#container-body {
+		max-width: 800px;
+		margin: 0px auto;
+	}
+
+	/*
+	 * Main Header
+	*/
+	#header-main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 10fr;
+	}
+
+	.header-links {
+		margin-left: 3rem;
+	}
+
+	.header-menu,
+	.header-menu-a {
+		display: none;
+	}
+
+	#header-main-nav {
+		display: block; /* Restaura de volta para a página. */
+	}
+
+	#header-main-nav ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	#header-main-nav ul li {
+		padding: 1rem 1.25rem;
+		text-decoration: underline;
+	}
+
+	/*
+	 * Hero Section
+	*/
+	#hero {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.hero-text {
+		padding: 1.5rem;
+		margin-bottom: 1rem;
+		border-right: 1px solid #000;
+	}
+
+	.hero-text h2 {
+	  font-size: 2.8rem;
+	}
+
+	.about-me {
+	  justify-content: center;
+	  padding: 1.5rem;
+	}
+
+	.about-me-text {
+		width: 90%;
+	  padding-bottom: 2rem;
+	}
+
+	.temp-cv-download {
+	  width: 10rem;
+	}
+
+	/*
+	 * Projects Section
+	*/
+	.projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+	}
+
+	#projects > h2,
+	#projects > p {
+		text-align: center;
+	}
+
+	/*
+	 * Skills Section
+	*/
+	.skills-info-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+
+	}
+
+	.skill-desc {
+		width: auto;
+	}
+
+	/*
+	 * Footer Section
+	*/
+	#footer-main ul {
+		flex-direction: row;
+	}
+}
+

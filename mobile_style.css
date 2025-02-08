@@ -19,13 +19,12 @@ img {
 
 html {
   font-family: 'Bellota Text', serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin-bottom: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,15 +33,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 3.4rem;
+  font-size: 2.2rem;
 }
 
 h3 {
   font-size: 1.75rem;
-}
-
-p, i, span {
-  font-size: 1.25rem;
 }
 
 a {
@@ -87,7 +82,7 @@ a {
 }
 
 .header-links img {
-  width: 32px;
+  width: 2rem;
 }
 
 .header-links .temp-links {
@@ -107,12 +102,15 @@ a {
   background: center/100% no-repeat url('assets/icons/icon_menu_open.png');
 }
 
+#header-main-nav {
+  display: none;
+}
+
 /*
  * Hero Section
 */
 #hero {
   /*box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);*/
-  border-bottom: 1px solid rgba(43, 43, 43, 0.5);
   text-align: center;
   border-radius: 6px;
 }
@@ -122,12 +120,11 @@ a {
 }
 
 .hero-text h2 {
-  font-size: 3.4rem;
+  font-size: 2.2rem;
   padding-bottom: 2rem;
 }
 
 .hero-text p {
-  font-size: 1.25rem;
   padding-bottom: 2rem;
 }
 
@@ -138,10 +135,11 @@ a {
 }
 
 .temp-frame {
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 100vw;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+  background: center/100% no-repeat url('assets/media/me.jpeg');
 }
 
 .about-me-frame {
@@ -153,14 +151,26 @@ a {
   padding-bottom: 2rem;
 }
 
-.temp-cv-download {
-  width: 35vw;
-  height: 3.5rem;
+.about-me-text h1 {
+  font-size: 1rem;
+}
+
+.cv-download-media {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1.25rem 1.75rem;
   border-radius: 6px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
   margin-bottom: 3rem;
 }
 
+.cv-download-media span {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: center/100% no-repeat url('assets/icons/icon_download.png');
+}
 
 
 /*
@@ -193,29 +203,24 @@ a {
 }
 
 .media-ponginsee {
-  background: center/100% no-repeat url('assets/media/gif_ponginsee.gif');
+  background: center/100% no-repeat url('assets/gifs/gif_ponginsee.gif');
   background-size: 100% 100%;
 }
 
 
 .media-rememorari {
-  background: center/100% no-repeat url('assets/media/print_rememorari.png');
+  background: center/100% no-repeat url('assets/gifs/print_rememorari.png');
   
 }
 
 .media-mirpro {
-  background: center/100% no-repeat url('assets/media/gif_mirpro.gif');
+  background: center/100% no-repeat url('assets/gifs/gif_mirpro.gif');
   background-size: cover;
 }
 
 .media-gameoflife {
-  background: center/100% no-repeat url('assets/media/gif_gameoflife.gif');
+  background: center/100% no-repeat url('assets/gifs/gif_gameoflife.gif');
   background-size: 100% 100%;
-}
-
-.media-private-servers {
-  background: center/100% no-repeat url('assets/media/print_private_servers.png');
-  background-size: cover;
 }
 
 .project-labels {
@@ -339,8 +344,8 @@ a {
 
 .depo-media {
   margin-top: 3rem;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 100vw;
   background: center/100% no-repeat url('assets/icons/icon_client_ratz.png');
 }
@@ -398,8 +403,8 @@ a {
 }
 
 .contact-media {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100vw;
   margin-right: 0.5rem;
 }

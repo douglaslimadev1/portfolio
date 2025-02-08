@@ -17,6 +17,8 @@
     <meta property='og:type' content='website'>
 
     <link rel='stylesheet' href='mobile_style.css'>
+    <link rel='stylesheet' href='tablet_style.css'>
+    <link rel='stylesheet' href='desktop_style.css'>
     <link rel='icon' type='image/x-icon' href='assets/icons/logo.png'>
   </head>
   <body>
@@ -30,31 +32,40 @@
           <a href='mailto:dslbit.contact@protonmail.com' target='_blank'><div class='header-link'><img src='assets/icons/icon_email.png' alt='Douglas Lima Email'></div></a>
           <a href='https://github.com/dslbit' target='_blank'><div class='header-link'><img src='assets/icons/icon_github.png' alt='Douglas Lima Github'></div></a>
         </div>
-        <a href=''>
+
+        <a href='#' class='header-menu-a'>
           <div class='header-menu'></div>
         </a>
+
+        <nav id='header-main-nav'>
+          <ul>
+            <a href='#hero'><li>Sobre</li></a>
+            <a href='#projects'><li>Projetos</li></a>
+            <a href='#contact'><li>Contato</li></a>
+          </ul>
+        <nav>
       </header>
       
       <main>
         <section id='hero' class='margin-main-content margin-top-gap padding-main-content'>
           <div class='hero-text'>
             <h2>O amor por um hobby que se tornou uma carreira</h2>
-            <p>Por mais de <em>meia década</em> acompanhando o cenário de programação no Brasil e no mundo, adquirindo experiências incríveis e criado projetos que desafiam até desenvolvedores sêniors, eu decidi tornar o que eu mais amo fazer em meu trabalho, e isso não me fez perder brilho que sempre existiu no processo.</p>
+            <p>Por mais de <em><strong>meia década</strong></em> ⏳ acompanhando o cenário de programação no Brasil e no mundo, adquirindo experiências incríveis 🚀 e criando projetos que me fizeram superar limites 🧠🔥, eu decidi tornar <b>o que eu mais amo fazer</b> ❤️ em meu trabalho, e isso não me fez perder brilho ✨ que sempre existiu no processo! 💡</p>
           </div>
           <div class='about-me'>
             <div class='about-me-frame'>
               <div class='temp-frame'></div>
             </div>
             <div class='about-me-text'>
-              <h1><strong>Douglas Lima</strong>, <em>maratonista</em> & <em>programador com experiência em Desenvolvimento Desktop e Front End.</em></h1>
+              <h1><strong>Douglas Lima</strong>, <em>programador</em>👨‍💻 & <em>maratonista</em>🏃‍♂️! <em>Experiência em desenvolvimento Desktop e Front End.</em></h1>
             </div>
             <div class='about-me-cv'>
-              <a href='#'> <div class='temp-cv-download'></div> </a>
+              <a href='#'> <div class='cv-download-media'><span></span>Baixar currículo</div></a>
             </div>
           </div>
         </section>
         
-        <section id='projects' class='margin-main-content margin-top-gap padding-main-content'>
+        <section id='projects' class='margin-main-content margin-top-gap'>
           <h2>Projetos</h2>
           <p>Projetos dignos de nota</p>
           
@@ -63,7 +74,7 @@
             <article class='project-info'>
               <div class='project-media'>
                 <!-- img/gif/mp4 ... autoplay -->
-                <div class='project-media-src media-ponginsee' ><!-- <img src='assets/media/gif_ponginsee.gif' alt=''> --></div>
+                <div class='project-media-src media-ponginsee' ><!-- <img src='assets/gifs/gif_ponginsee.gif' alt=''> --></div>
                 <div class='project-labels'>
                   <div class='project-label'>C</div>
                   <div class='project-label'>Win32API</div>
@@ -76,9 +87,9 @@
               </div>
               <div class='project-description'>
                 <p class='project-category'>Desktop</p>
-                <p class='project-name'><strong>Ponginsee</strong></p>
+                <p class='project-name'><strong>Ponginsee</strong> - <a href='https://github.com/dslbit/Ponginsee' target='_blank'>Repositório [aqui]</a></p>
                 <p class='project-desc-text'>
-                  O maior e mais complexo projeto que eu construi até hoje. É um Jogo & Engine 2D (ainda em construção) feito do zero por mim em C, no Windows com apenas a API do Windows. Arquitetura prática e inteligênte, renderização em software dos gráficos e do texto, física e input. Zero bibliotecas, zero código de terceiros, só eu e o sistema operacional!
+                  O maior e mais complexo projeto que eu construi até hoje!💻 É um <strong>Jogo & Engine 2D</strong> (ainda em construção) feito do zero por mim em <b>C</b>, no Windows <i>com apenas a API do Windows</i>. 🛠️ Arquitetura prática e inteligênte, <b>renderização em software</b> dos gráficos🎨 e do <b>texto</b>🗚, <b>física</b>⚙️ e <b>input</b>🎮.<br>🚀 <strong>Zero bibliotecas, zero código de terceiros</strong> – só eu e o sistema operacional!🏆🔥
                 </p>
               </div>
             </article>
@@ -99,9 +110,9 @@
               </div>
               <div class='project-description'>
                 <p class='project-category'>CRUD Web App</p>
-                <p class='project-name'><strong>reMemorari</strong></p>
+                <p class='project-name'><strong>reMemorari</strong> - <a href='https://github.com/dslbit/reMemorari' target='_blank'>Repositório [aqui]</a></p>
                 <p class='project-desc-text'>
-                  É uma aplicação <b>CRUD</b> feita com <em>Javascript Vanilla</em> usando a arquitetura <b>MVC</b>. Download e upload de anotações com armazenamento local.
+                  É uma aplicação <b>CRUD</b> feita com <em>Javascript Vanilla</em> usando a <b>arquitetura MVC</b>. Download e upload de anotações com armazenamento local.
                 </p>
               </div>
             </article>
@@ -118,9 +129,9 @@
               </div>
               <div class='project-description'>
                 <p class='project-category'>Desktop</p>
-                <p class='project-name'><strong>MirPro 1.0</strong></p>
+                <p class='project-name'><strong>MirPro 1.0</strong> - <i>Repositório Privado</i></p>
                 <p class='project-desc-text'>
-                  <strong>Projeto comercial</strong> que eu escrevi em C, fiz uma 'beta test' e lancei posteriormente a versão 1.0 para o público em 2023 para um jogo que eu jogava naquele momento. Tecnologia autoral feita sobre a Win32 API. Projeto proprietário, se quiser saber mais sobre ele entre em contato.
+                  <strong>Projeto comercial</strong> que eu escrevi em C, fiz uma 'beta test' e lancei posteriormente a versão 1.0 para o público em 2023 para um jogo que eu jogava naquele momento. Tecnologia autoral feita sobre a <b>Win32 API</b>. Projeto proprietário, se quiser saber mais sobre ele entre em contato.
                 </p>
               </div>
             </article>
@@ -137,9 +148,9 @@
               </div>
               <div class='project-description'>
                 <p class='project-category'>Desktop</p>
-                <p class='project-name'><strong>Conway's Game of Life in C</strong></p>
+                <p class='project-name'><strong>Conway's Game of Life in C</strong> - <a href='https://github.com/dslbit/game_of_life' target='_blank'>Repositório [aqui]</a></p>
                 <p class='project-desc-text'>
-                  Primeiro projeto em plataforma nativa depois de aplicar o que aprendi com Casey Muratori e seu curso Handmade Hero que <em>foi e é minha maior influência ao longo da minha jornada na programação</em>. Aprendi a pensar e solucionar problemas de acordo com o desenvolvimento do código invés de idealizar sistemas primeiro e programar depois. Programação de sistemas através da exploração (em Jogos) para determinar o Design correto da arquitetura.
+                  Primeiro projeto em plataforma nativa depois de aplicar o que aprendi com <b>Casey Muratori</b> e seu curso <b>Handmade Hero</b> que <em>foi e é minha maior influência ao longo da minha jornada na programação</em>. Aprendi a pensar e solucionar problemas de acordo com o desenvolvimento do código invés de idealizar sistemas primeiro e programar depois. <b>Programação de sistemas através da exploração</b> (em Jogos) para determinar o Design correto da arquitetura.
                 </p>
               </div>
             </article>
@@ -147,7 +158,7 @@
             <article class='project-info'>
               <div class='project-media'>
                 <!-- img/gif/mp4 ... autoplay -->
-                <div class='project-media-src media-private-servers'></div>
+                <div class='project-media-src'></div>
                 <div class='project-labels'>
                   <div class='project-label'>Java Scripting</div>
                   <div class='project-label'>Pawn Scripting</div>
@@ -162,7 +173,7 @@
                 <p class='project-category'>Scripts</p>
                 <p class='project-name'><strong>Servidores Privados de Jogos (2016 - 2018)</strong></p>
                 <p class='project-desc-text'>
-                  O ponto de partida para minha paixão por programação começou com uma tentativa de aprender a criar servidores de jogos privados, o que eu realmente gostava na época. Naquela época, adquiri muita experiência sobre o funcionamento de <b>servidores</b> e <b>bancos de dados</b>, tive meu primeiro contato com <strong>Java, plug-ins Java, Pawn Scriping, C#, ASM, C++ e SQL Server</strong>. Isso me levou a criar diferentes servidores privados para alguns jogos (<i>Priston Tale</i>, <i>Minecraft</i>, <i>GTA SA Multiplayer</i>). Um desses projetos eu publiquei on-line em 2018 em minha antiga conta do github e o repositório ainda está disponível <b><a href='https://github.com/LittleCoffeeBoy/AroundTheWorld' target='_blank'>[aqui]</a></b>.
+                  O ponto de partida para minha paixão por programação começou com uma tentativa de aprender a criar servidores de jogos privados, o que eu realmente gostava na época. Naquela época, adquiri um pouco de experiência sobre o funcionamento de <b>servidores</b> e <b>bancos de dados</b>, tive meu primeiro contato com <strong>Java, plug-ins Java, Pawn Scriping, C#, ASM, C++ e SQL Server</strong>. Isso me levou a criar diferentes servidores privados para alguns jogos (<i>Priston Tale</i>, <i>Minecraft</i>, <i>GTA SA Multiplayer</i>). Um desses projetos eu publiquei on-line em 2018 em minha antiga conta do github e o repositório ainda está disponível <b><a href='https://github.com/LittleCoffeeBoy/AroundTheWorld' target='_blank'>[aqui]</a></b>.
                 </p>
               </div>
             </article>
@@ -170,33 +181,37 @@
         </section>
         
         <section id='skills' class='margin-main-content padding-main-content margin-top-gap'>
+          <!-- Skills - Header -->
           <h2>Habilidades</h2>
-          <div class='skill-info'>
-            <div class='skill-media skill-media-webpage'></div>
-            <div class='skill-title'><h3>Desenvolvimento Front End</h3></div>
-            <div class='skill-desc'><p>Criei aplicações CRUD o suficiente em HTML, CSS e JS para me sentir confortável trabalhando no Front End e continuo praticando e estudando para lidar com desenvolvimento Full Stack.</p></div>
-          </div>
-          
-          <div class='skill-info'>
-            <div class='skill-media skill-media-settings'></div>
-            <div class='skill-title'><h3>Scripts</h3></div>
-            <div class='skill-desc'><p>Por conta de toda experiência que tive com servidores privado de jogos no início das minhas aventuras no mundo da programação, consigo me adaptar fácil em diferentes linguagens scripts.</p></div>
-          </div>
-          
-          <div class='skill-info'>
-            <div class='skill-media skill-media-system'></div>
-            <div class='skill-title'><h3>Manutenção em sistemas legacy</h3></div>
-            <div class='skill-desc'><p>Criando plugins ao longo desses anos tive que trabalhar muito com códigos de outras pessoas, portante lidei o tempo inteiro com muita leitura, análise e alterações em bases de código de diversas pessoas.</p></div>
-          </div>
-          
-          <div class='skill-info'>
-            <div class='skill-media skill-media-monitor'></div>
-            <div class='skill-title'><h3>Desenvolvimento Desktop</h3></div>
-            <div class='skill-desc'><p>A maioria de meus projetos comerciais e pessoais foram aplicações Desktop nativas, então entendo o que é necessário para lidar com uma API nativa de um sistema e entregar um produto de qualidade com performance.</p></div>
+
+          <div class='skills-info-container'>
+            <div class='skill-info'>
+              <div class='skill-media skill-media-webpage'></div>
+              <div class='skill-title'><h3>Desenvolvimento Front End</h3></div>
+              <div class='skill-desc'><p>Criei aplicações CRUD o suficiente em HTML, CSS e JS para me sentir confortável trabalhando no Front End e continuo praticando e estudando para lidar com desenvolvimento Full Stack.</p></div>
+            </div>
+            
+            <div class='skill-info'>
+              <div class='skill-media skill-media-settings'></div>
+              <div class='skill-title'><h3>Scripts</h3></div>
+              <div class='skill-desc'><p>Por conta de toda experiência que tive com servidores privado de jogos no início das minhas aventuras no mundo da programação, consigo me adaptar fácil em diferentes linguagens scripts.</p></div>
+            </div>
+            
+            <div class='skill-info'>
+              <div class='skill-media skill-media-system'></div>
+              <div class='skill-title'><h3>Manutenção em sistemas legacy</h3></div>
+              <div class='skill-desc'><p>Criando plugins ao longo desses anos tive que trabalhar muito com códigos de outras pessoas, portante lidei o tempo inteiro com muita leitura, análise e alterações em bases de código de diversas pessoas.</p></div>
+            </div>
+            
+            <div class='skill-info'>
+              <div class='skill-media skill-media-monitor'></div>
+              <div class='skill-title'><h3>Desenvolvimento Desktop</h3></div>
+              <div class='skill-desc'><p>A maioria de meus projetos comerciais e pessoais foram aplicações Desktop nativas, então entendo o que é necessário para lidar com uma API nativa de um sistema e entregar um produto de qualidade com performance.</p></div>
+            </div>
           </div>
         </section>
         
-        <section id='depos' class='margin-main-content margin-top-gap padding-main-content'>
+        <section id='depos' class='margin-main-content margin-top-gap'>
           <div class='depo'>
             <div class='depo-text'><p>“Impossível fazer a rotação de bosses sem esse aplicativo, as notificações e os cronômetros ajudam demais!”</p></div>
             <div class='depo-media'></div>
@@ -230,9 +245,9 @@
         
         <footer id='footer-main' class='margin-top-gap padding-main-content'>
           <ul>
-            <a href='#'><li>Sobre</li></a>
-            <a href='#'><li>Projetos</li></a>
-            <a href='#'><li>Contato</li></a>
+            <a href='#hero'><li>Sobre</li></a>
+            <a href='#projects'><li>Projetos</li></a>
+            <a href='#contact'><li>Contato</li></a>
           </ul>
           <p>© 2025 Douglas Lima. Todos os direitos reservados.</p>
         </footer>
