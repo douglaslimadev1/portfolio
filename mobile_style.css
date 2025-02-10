@@ -42,6 +42,7 @@ h3 {
 
 a {
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .padding-main-content {
