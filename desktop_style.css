@@ -16,4 +16,8 @@
 	#container-body {
 		max-width: 1600px;
 	}
+
+	.project-media-src {
+		height: 55vh;
+	}
 }

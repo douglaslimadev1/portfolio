@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
   --bg-color: #f6f6f6;
@@ -18,7 +19,8 @@ img {
 }
 
 html {
-  font-family: 'Bellota Text', serif;
+  /*font-family: 'Bellota Text', serif;*/
+  font-family: 'Inter', serif;
   font-size: 16px;
 }
 
@@ -28,7 +30,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Cormorant Garamond', serif;*/
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
 
@@ -61,19 +64,39 @@ a {
  * Main Header
 */
 #header-main {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items:center;
   border-bottom: 1px solid rgba(43, 43, 43, 0.25);
   width: 100%;
   height: 4rem;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s;
+  background-color: rgba(246, 246, 246, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#header-main:hover {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.35);
 }
 
 .header-logo {
   width: 2.25rem;
   height: 2.6rem;
-  background: center/100% no-repeat url('assets/icons/logo.png') ;
+  background: center/100% no-repeat url('assets/icons/logo.png');
+  transition: all 0.1s; /*transform?*/
+}
+
+.header-logo:hover {
+  width: 2.5rem;
+  height: 3rem;
 }
 
 .header-links {
@@ -90,6 +113,17 @@ a {
   width: 2rem;
   height: 2rem;
   background-color: #2b2b2b;
+}
+
+.header-links a {
+  text-decoration: none;
+  font-size: 2rem;
+  transition: border-bottom 0.1s;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+.header-links a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .header-link {
@@ -197,31 +231,36 @@ a {
 
 .project-media-src {
   width: 100%;
-  min-height: 17rem;
+  min-height: 25rem;
   height: 38vh;
   background-color: rgba(0, 0, 0, 1);
   border-radius: 6px;
 }
 
 .media-ponginsee {
-  background: center/100% no-repeat url('assets/gifs/gif_ponginsee.gif');
+  background: center/100% no-repeat url('assets/media/gif_ponginsee.gif');
   background-size: 100% 100%;
 }
 
 
 .media-rememorari {
-  background: center/100% no-repeat url('assets/gifs/print_rememorari.png');
+  background: center/100% no-repeat url('assets/media/print_rememorari.png');
   
 }
 
 .media-mirpro {
-  background: center/100% no-repeat url('assets/gifs/gif_mirpro.gif');
+  background: center/100% no-repeat url('assets/media/gif_mirpro.gif');
   background-size: cover;
 }
 
 .media-gameoflife {
-  background: center/100% no-repeat url('assets/gifs/gif_gameoflife.gif');
+  background: center/100% no-repeat url('assets/media/gif_gameoflife.gif');
   background-size: 100% 100%;
+}
+
+.media-private-servers {
+  background: center/100% no-repeat url('assets/media/print_private_servers.png');
+  background-size: cover;
 }
 
 .project-labels {
@@ -301,7 +340,7 @@ a {
 }
 
 .skill-media-webpage {
-  background: center/84% no-repeat url('assets/icons/icon_webpage.png');
+  background: center/100% no-repeat url('assets/icons/icon_webpage2.png');
 }
 
 .skill-media-system {
@@ -462,4 +501,18 @@ a {
 #footer-main p {
   text-align: center;
   padding: 2.45rem 0rem;
+}
+
+@media screen and (min-width: 600px) {
+  .padding-main-content {
+    padding: 0rem 1.65rem;
+  }
+
+  .margin-main-content {
+    margin: 0rem 1.65rem;
+  }
+
+  .margin-top-gap {
+    margin-top: 2.8rem;
+  }
 }

@@ -33,7 +33,16 @@
 
 	#header-main-nav ul li {
 		padding: 1rem 1.25rem;
-		text-decoration: underline;
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		transition: all 0.1s;
+	}
+
+	#header-main-nav ul li:hover {
+		border-bottom: 1px solid rgba(0, 0, 0, 1);
+	}
+
+	#header-main-nav ul a:hover {
+		text-decoration: none;
 	}
 
 	/*
@@ -82,13 +91,17 @@
 		text-align: center;
 	}
 
+	.project-media-src {
+		height: 45vh;
+	}
+
 	/*
 	 * Skills Section
 	*/
 	.skills-info-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 2rem;
+		grid-gap: 5rem;
 
 	}
 
