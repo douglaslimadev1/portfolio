@@ -4,7 +4,13 @@
 	}
 
 	#container-body {
-		max-width: 1200px;
+		max-width: 900px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	#container-body {
+		max-width: 1000px;
 	}
 }
 
@@ -14,10 +20,34 @@
 	}
 
 	#container-body {
-		max-width: 1600px;
+		max-width: 1200px;
+	}
+}
+
+@media screen and (min-width: 1850px) {
+	html {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	html {
+		font-size: 24px;
 	}
 
-	.project-media-src {
-		height: 55vh;
+	#container-body {
+		max-width: 1400px;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	html {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 2800px) {
+	html {
+		font-size: 28px;
 	}
 }

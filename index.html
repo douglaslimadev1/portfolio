@@ -5,9 +5,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Portfólio - Douglas Lima</title>
     
-    <meta name='description' content='Portfólio e Projetos do Desenvolvedor de Software Douglas Lima'>
+    <meta name='description' content='Portfólio do Desenvolvedor de Software Douglas Lima'>
     <meta name='author' content='Douglas Lima'>
-    <meta name='keywords' content='desenvolvedor, front-end, desktop, programador, game development'>
+    <meta name='keywords' content='desenvolvedor, front-end, desktop, programador, desenvolvimento de jogos'>
     
     <meta property='og:title' content='Portfólio - Douglas Lima'>
     <meta property='og:description' content='Portfólio e Projetos do Desenvolvedor de Software Douglas Lima'>
@@ -16,7 +16,7 @@
     <meta property='og:image:alt' content='Logo do Douglas Lima, suas iniciais "D" e "L"'>
     <meta property='og:type' content='website'>
 
-    <link rel='stylesheet' href='mobile_style.css'>
+    <link rel='stylesheet' href='mobile_first_style.css'>
     <link rel='stylesheet' href='tablet_style.css'>
     <link rel='stylesheet' href='desktop_style.css'>
     <link rel='icon' type='image/x-icon' href='assets/icons/logo.png'>
@@ -24,43 +24,68 @@
   <body>
     <div id='container-body'>
       <header id='header-main' class='padding-main-content'>
-        <a href='index.html'>
-          <div class='header-logo'></div>
-        </a>
+        <!-- Website (header) main logo -->
+        <div class='header-logo'><a href='index.html'></a></div>
+
+        <!-- Header Social Links (linkedin, email and github) -->
         <div class='header-links'>
-          <a href='https://www.linkedin.com/in/douglaslimadev1/' target='_blank'><div class='header-link'><!-- <img src='assets/icons/icon_linkedin2.svg' alt='Douglas Lima Linkedin'> --><span class='fa-brands fa-linkedin'></span></div></a>
-          <a href='mailto:douglaslimadev.contact@protonmail.com' target='_blank'><div class='header-link'><!-- <img src='assets/icons/icon_email.png' alt='Douglas Lima Email'> --><span class='fa-regular fa-envelope'></span></div></a>
-          <a href='https://github.com/douglaslimadev1' target='_blank'><div class='header-link'><!-- <img src='assets/icons/icon_github.png' alt='Douglas Lima Github'> --><span class='fa-brands fa-github'></span></div></a>
+          <div class='header-link'>
+            <a href='https://www.linkedin.com/in/douglaslimadev1/' target='_blank'>
+              <span class='fa-brands fa-linkedin'></span>
+            </a>
+          </div>
+
+          <div class='header-link'>
+            <a href='mailto:douglaslimadev.contact@protonmail.com' target='_blank'>
+              <span class='fa-regular fa-envelope'></span>
+            </a>
+          </div>
+
+          <div class='header-link'>
+            <a href='https://github.com/douglaslimadev1' target='_blank'>
+              <span class='fa-brands fa-github'></span>
+            </a>
+          </div>
         </div>
 
-        <a href='#' class='header-menu-a'>
-          <div class='header-menu'></div>
-        </a>
+        <!-- Header Mobile Menu (open/close) -->
+        <div class='header-menu'>
+          <a href='#' class='header-menu-a'>
+            <span class='fa-solid fa-bars'></span>
+          </a>
+        </div>
 
         <nav id='header-main-nav'>
           <ul>
-            <a href='#hero'><li>Sobre</li></a>
-            <a href='#projects'><li>Projetos</li></a>
-            <a href='#contact'><li>Contato</li></a>
+            <li><a href='#hero'>Sobre</a></li>
+            <li><a href='#projects'>Projetos</a></li>
+            <li><a href='#contact'>Contato</a></li>
           </ul>
-        <nav>
+        </nav>
       </header>
       
       <main>
         <section id='hero' class='margin-main-content margin-top-gap padding-main-content'>
           <div class='hero-text'>
             <h2>O amor por um hobby que se tornou uma carreira</h2>
-            <p>Por mais de <em><strong>meia década</strong></em> ⏳ acompanhando o cenário de programação no Brasil e no mundo, adquirindo experiências valiosas e criando projetos que me fizeram superar limites 🧠, eu decidi tornar <b>o que eu mais amo fazer</b> em meu trabalho, e isso não me fez perder brilho ✨ que sempre existiu no processo!</p>
+            <p>Por mais de <em><strong>meia década</strong></em> ⏳ acompanhando o cenário de programação no Brasil e no mundo, adquirindo experiências valiosas e criando projetos que me fizeram superar limites 🧠, eu decidi tornar <b>o que eu mais amo fazer</b> em meu trabalho, e isso não me fez perder o brilho ✨ que sempre existiu no processo!</p>
           </div>
-          <div class='about-me'>
-            <div class='about-me-frame'>
-              <div class='temp-frame'></div>
+          <div class='aboutme'>
+            <div class='aboutme-frame'>
+              <div class='aboutme-media-src'></div>
             </div>
-            <div class='about-me-text'>
-              <h1><strong>Douglas Lima</strong>, <em>programador</em>👨‍💻 & <em>maratonista</em>🏃‍♂️! <em>Experiência em desenvolvimento Desktop e Front End.</em></h1>
+
+            <div class='aboutme-text'>
+              <h1><strong>Douglas Lima</strong>, <em>programador</em>👨‍💻 e <em>maratonista</em>🏃‍♂️! <em>Experiência em desenvolvimento Desktop e Front End.</em></h1>
             </div>
-            <div class='about-me-cv'>
-              <a href='Curriculo_Douglas_da_Silva_Lima.pdf'> <div class='cv-download-media'><span></span>Baixar currículo</div></a>
+
+            <!-- "Download my cv" button -->
+            <div class='aboutme-cv'>
+              <div class='cv-download-media'>
+                <a href='Curriculo_Douglas_da_Silva_Lima.pdf' target='_blank'>
+                  <span class='fa-solid fa-download'></span>Baixar currículo
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -89,7 +114,7 @@
                 <p class='project-category'>Desktop</p>
                 <p class='project-name'><strong>Ponginsee</strong> - <a href='https://github.com/douglaslimadev1/Ponginsee' target='_blank'>Repositório [aqui]</a></p>
                 <p class='project-desc-text'>
-                  O maior e mais complexo projeto que eu construi até hoje! É um <strong>Jogo & Engine 2D</strong> (ainda em construção) feito do zero por mim em <b>C</b>, no Windows <i>com apenas a API do Windows</i>. Arquitetura prática e inteligênte, <b>renderização em software</b> dos gráficose do <b>texto</b>🗚, <b>física</b> e <b>input</b>.<br><strong>Zero bibliotecas, zero código de terceiros</strong> – só eu e o sistema operacional!🏆🔥
+                  O maior e mais complexo projeto que eu construí até hoje! É um <strong>Jogo & Engine 2D</strong> (ainda em construção) feito do zero por mim em <b>C</b>, no Windows <i>com apenas a API do Windows</i>. Arquitetura prática e inteligente, <b>renderização em software</b> dos gráficos do <b>texto</b>, <b>física</b> e <b>input</b>.<br><strong>Zero bibliotecas, zero código de terceiros</strong> – só eu e o sistema operacional!🏆🔥
                 </p>
               </div>
             </article>
@@ -150,7 +175,7 @@
                 <p class='project-category'>Desktop</p>
                 <p class='project-name'><strong>Conway's Game of Life in C</strong> - <a href='https://github.com/douglaslimadev1/game_of_life' target='_blank'>Repositório [aqui]</a></p>
                 <p class='project-desc-text'>
-                  Primeiro projeto em plataforma nativa depois de aplicar o que aprendi com <b>Casey Muratori</b> e seu curso <b>Handmade Hero</b> que <em>foi e é minha maior influência ao longo da minha jornada na programação</em>. Aprendi a pensar e solucionar problemas de acordo com o desenvolvimento do código invés de idealizar sistemas primeiro e programar depois. <b>Programação de sistemas através da exploração</b> 🕹️ para determinar o Design correto da arquitetura.
+                  Primeiro projeto em plataforma nativa depois de aplicar o que aprendi com <b>Casey Muratori</b> e seu curso <b>Handmade Hero</b> que <em>foi e é minha maior influência ao longo da minha jornada na programação</em>. Aprendi a pensar e solucionar problemas de acordo com o desenvolvimento do código, invés de idealizar sistemas primeiro e programar depois. <b>Programação de sistemas através da exploração</b> 🕹️ para determinar o Design correto da arquitetura.
                 </p>
               </div>
             </article>
@@ -186,25 +211,33 @@
 
           <div class='skills-info-container'>
             <div class='skill-info'>
-              <div class='skill-media skill-media-webpage'></div>
+              <div class='skill-media'>
+                <span class='fa-regular fa-newspaper'></span>
+              </div>
               <div class='skill-title'><h3>Desenvolvimento Front End</h3></div>
               <div class='skill-desc'><p>Criei aplicações CRUD o suficiente em HTML, CSS e JS para me sentir confortável trabalhando no Front End e continuo praticando e estudando para lidar com desenvolvimento Full Stack.</p></div>
             </div>
             
             <div class='skill-info'>
-              <div class='skill-media skill-media-settings'></div>
+              <div class='skill-media'>
+                <span class='fa-solid fa-scroll'></span>
+              </div>
               <div class='skill-title'><h3>Scripts</h3></div>
-              <div class='skill-desc'><p>Por conta de toda experiência que tive com servidores privado de jogos no início das minhas aventuras no mundo da programação, consigo me adaptar fácil em diferentes linguagens scripts.</p></div>
+              <div class='skill-desc'><p>Por conta de toda experiência que tive com servidores privados de jogos no início das minhas aventuras no mundo da programação, consigo me adaptar fácil em diferentes linguagens scripts.</p></div>
             </div>
             
             <div class='skill-info'>
-              <div class='skill-media skill-media-system'></div>
+              <div class='skill-media'>
+                <span class='fa-solid fa-square-binary'></span>
+              </div>
               <div class='skill-title'><h3>Manutenção em sistemas legacy</h3></div>
-              <div class='skill-desc'><p>Criando plugins ao longo desses anos tive que trabalhar muito com códigos de outras pessoas, portante lidei o tempo inteiro com muita leitura, análise e alterações em bases de código de diversas pessoas.</p></div>
+              <div class='skill-desc'><p>Criando plugins ao longo desses anos tive que trabalhar muito com códigos de outras pessoas, então lidei o tempo inteiro com muita leitura, análise e alterações em bases de código de diversas pessoas.</p></div>
             </div>
             
             <div class='skill-info'>
-              <div class='skill-media skill-media-monitor'></div>
+              <div class='skill-media'>
+                <span class='fa-solid fa-desktop'></span>
+              </div>
               <div class='skill-title'><h3>Desenvolvimento Desktop</h3></div>
               <div class='skill-desc'><p>A maioria de meus projetos comerciais e pessoais foram aplicações Desktop nativas, então entendo o que é necessário para lidar com uma API nativa de um sistema e entregar um produto de qualidade com performance.</p></div>
             </div>
@@ -225,29 +258,32 @@
           <p>douglaslimadev.contact@protonmail.com</p>
           <div class='btn-email'>
             <a href='mailto:douglaslimadev.contact@protonmail.com' target='_blank'>
-              <div class='contact-media contact-media-email'></div>
-              Enviar E-Mail
+              <span class='icon fa-regular fa-envelope'></span><i class='underline'>Enviar E-Mail</i>
             </a>
           </div>
-          <div class='link-wpp'>
-            <div class='contact-media contact-media-wpp'></div>
-            <a href='tel:+5567991130159' target='_blank'>+55 (67) 9 9113 0159</a>    
+
+          <div class='contact-media'>
+            <a href='tel:+5567991130159' target='_blank'>
+              <span class='icon fa-brands fa-whatsapp'></span><i class='underline'>+55 (67) 9 9113 0159</i>
+            </a>
           </div>
-          <div class='link-linkedin'>
-            <div class='contact-media contact-media-linkedin'></div>
-            <a href='https://www.linkedin.com/in/douglaslimadev1/' target='_blank'>@douglaslimadev1</a>
+          <div class='contact-media'>
+            <a href='https://www.linkedin.com/in/douglaslimadev1/' target='_blank'>
+              <span class='icon fa-brands fa-linkedin'></span><i class='underline'>@douglaslimadev1</i>
+            </a>
           </div>
-          <div class='link-github'>
-            <div class='contact-media contact-media-github'></div>
-            <a href='https://github.com/douglaslimadev1' target='_blank'>@douglaslimadev1</a>
+          <div class='contact-media'>
+            <a href='https://github.com/douglaslimadev1' target='_blank'>
+              <span class='icon fa-brands fa-github'></span><i class='underline'>@douglaslimadev1</i>
+            </a>
           </div>
         </section>
         
         <footer id='footer-main' class='margin-top-gap padding-main-content'>
           <ul>
-            <a href='#hero'><li>Sobre</li></a>
-            <a href='#projects'><li>Projetos</li></a>
-            <a href='#contact'><li>Contato</li></a>
+            <li><a href='#hero'>Sobre</a></li>
+            <li><a href='#projects'>Projetos</a></li>
+            <li><a href='#contact'>Contato</a></li>
           </ul>
           <p>© 2025 Douglas Lima. Todos os direitos reservados.</p>
         </footer>
