@@ -16,8 +16,7 @@
 		margin-left: 3rem;
 	}
 
-	.header-menu,
-	.header-menu-a {
+	#header-menu {
 		display: none;
 	}
 

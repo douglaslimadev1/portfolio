@@ -22,6 +22,7 @@ html {
   /*font-family: 'Bellota Text', serif;*/
   font-family: 'Inter', serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -140,16 +141,69 @@ a {
 }
 
 /* Mobile Menu */
-.header-menu {
+#header-menu {
   width: 2rem;
   height: 2.6rem;
+  cursor: pointer;
 }
 
-.header-menu a {
-  display: inline-block;
+#header-menu span {
   width: 100%;
   height: 100%;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#header-mobile-main-nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(1px);
+  overflow: hidden;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+}
+
+#close-menu-xmark {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.85rem;
+  cursor: pointer;
+}
+
+#close-menu-xmark span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#header-mobile-main-nav ul {
+  list-style-type: none;
+}
+
+#header-mobile-main-nav ul li {
+  width: 100vw;
+}
+
+#header-mobile-main-nav ul li a {
+  display: inline-block;
+  padding: 2rem 0rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  /*text-decoration: none;*/
+  /*border-bottom: 1px solid #fff;*/
+  margin: 1rem 0rem;
+  border: 1px solid #fff;
+  background: transparent;
 }
 
 #header-main-nav {
